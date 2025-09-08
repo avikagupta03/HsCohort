@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottom Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    .bottom-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px 80px;
+      background-color: #000; /* dark bar */
+    }
+
+    /* Left text block */
+    .left {
+      max-width: 400px;
+    }
+
+    .left h2 {
+      margin: 0 0 15px;
+      font-size: 20px;
+    }
+
+    .left p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #bbb;
+    }
+
+    /* Right grid of languages */
+    .right {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 15px 40px;
+      font-size: 14px;
+    }
+
+    .lang {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bottom-bar">
+    <!-- Left block -->
+    <div class="left">
+      <h2>Code in any language</h2>
+      <p>
+        VS Code supports almost every major programming language.
+        Several ship in the box, like JavaScript, TypeScript, CSS, and HTML,
+        but extensions for others can be found in the VS Code Marketplace.
+      </p>
+    </div>
+
+    <!-- Right block -->
+    <div class="right">
+      <div class="lang"><span class="icon">🟨</span> JavaScript</div>
+      <div class="lang"><span class="icon">🔷</span> TypeScript</div>
+      <div class="lang"><span class="icon">🐍</span> Python</div>
+      <div class="lang"><span class="icon">⚙️</span> C#</div>
+      <div class="lang"><span class="icon">💻</span> C++</div>
+      <div class="lang"><span class="icon">{ }</span> JSON</div>
+      <div class="lang"><span class="icon">☕</span> Java</div>
+      <div class="lang"><span class="icon">📄</span> HTML</div>
+      <div class="lang"><span class="icon">🐘</span> PHP</div>
+      <div class="lang"><span class="icon">📝</span> Markdown</div>
+      <div class="lang"><span class="icon">💡</span> PowerShell</div>
+      <div class="lang"><span class="icon">⚡</span> YAML</div>
+    </div>
+  </div>
+
+</body>
+</html>
